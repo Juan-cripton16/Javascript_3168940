@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Battle Royale Mario Style</title>
-  <style>
-   
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Royale Mario Simple</title>
+  <link rel="stylesheet" href="style.css">
+  
+    
+  
 </head>
 <body>
-  <div class="game-container">
-    <img src="FONDO.jpg" alt="Fondo del juego" class="fondo" />
-    <img src="moneda.png" alt="Moneda" class="moneda" />
-    <img src="nube.png" alt="Nube" class="nube" />
-    <img src="caja.png" alt="Caja misteriosa" class="caja" />
-    <img src="seta.png" alt="Seta de poder" class="seta" />
-    <img src="personaje.png" alt="Personaje" class="personaje" />
-    <img src="CAJA DE ITEM.png" alt="Caja de munición" class="municion" />
-    <img src="CAJA DE INT SIN FONDO.png" alt="Caja con signo de interrogación" class="caja-pregunta" />
+
+  <div class="juego">
+    <img src="fondo2.jpg" class="fondo" alt="Fondo">
+    <div class="puntaje">Puntaje: <span id="score">0</span></div>
+    <img src="PERSONAJE.png" alt="PERSONAJE" class="moverpersonaje" style="width: 100px; left: 150px;top: 60%;">
+    <img src="MONEDA.png" class="moneda "  style="top:150px; left: 130px; width:60px;">
+    <img src="CJA DE INT.png" class="seta saltarmoneda"  style="bottom:60px; left:400px; width:70px;">
+    <img src="MUNI.png" class="muni saltarmoneda"  style="bottom:120px; right:200px; width:100px;">
+    <img src="CJA DE INT.png" class="caja saltarmoneda"  class="saltar4" style="bottom:120px; right:100px; width:80px;">
   </div>
+
+ <script src="index.js"></script>
+
 </body>
 </html>

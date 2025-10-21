@@ -1,82 +1,63 @@
 body {
       margin: 0;
       padding: 0;
-      background-color: #000;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background: #000;
+      
     }
 
-    .game-container {
+    .juego {
       position: relative;
-      width: 750px;
-      height: 500px;
+      width: 800px;
+      height: 450px;
       overflow: hidden;
-      border: 4px solid #222;
-      border-radius: 10px;
+      
     }
 
     .fondo {
-      position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      z-index: 1;
+      border-radius: 5%;
     }
 
-    .moneda {
+    img {
       position: absolute;
-      top: 80px;
-      left: 120px;
-      width: 60px;
-      z-index: 2;
+      cursor: pointer;
+      
     }
 
-    .nube {
+    
+    
+
+    .puntaje {
       position: absolute;
-      top: 40px;
-      left: 400px;
-      width: 120px;
-      z-index: 2;
+      top: 10px;
+      left: 10px;
+      background: rgba(255,255,255,0.7);
+      padding: 8px 15px;
+      border-radius: 10px;
+      font-family: sans-serif;
     }
 
-    .caja {
-      position: absolute;
-      bottom: 120px;
-      left: 320px;
-      width: 100px;
-      z-index: 2;
-    }
+.saltarmoneda{ 
+  animation: salto 0.5s ease forwards;
+}
+@keyframes salto {
+  0%{transform:translateY(0); opacity: 1;}
+  30%{transform:translateY(-60px);}
+  100%{transform:translateY(0); opacity: 0;}
+}
 
-    .seta {
-      position: absolute;
-      bottom: 100px;
-      right: 180px;
-      width: 80px;
-      z-index: 2;
-    }
+.moverpersonaje{
+  animation: moverpersonaje 4s linear infinite alternate;
 
-    .personaje {
-      position: absolute;
-      bottom: 60px;
-      left: 80px;
-      width: 120px;
-      z-index: 3;
-    }
-
-    .municion {
-      position: absolute;
-      bottom: 60px;
-      right: 80px;
-      width: 100px;
-      z-index: 2;
-    }
-
-    .caja-pregunta {
-      position: absolute;
-      top: 160px;
-      left: 250px;
-      width: 90px;
-      z-index: 2;
-    }
+}
+@keyframes moverpersonaje {
+  0% {transform: translateY(0);}
+  100% {
+    transform: translateY(-40px);
+  }
+}
