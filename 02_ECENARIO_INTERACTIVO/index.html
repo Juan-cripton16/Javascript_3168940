@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Battle Royale Mario Simple</title>
-  <link rel="stylesheet" href="style.css">
-  
-    
-  
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="juego">
-    <img src="fondo2.jpg" class="fondo" alt="Fondo">
-    <div class="puntaje">Puntaje: <span id="score">0</span></div>
-    <img src="PERSONAJE.png" alt="PERSONAJE" class="moverpersonaje" style="width: 100px; left: 150px;top: 60%;">
-    <img src="MONEDA.png" class="moneda "  style="top:150px; left: 130px; width:60px;">
-    <img src="CJA DE INT.png" class="seta saltarmoneda"  style="bottom:60px; left:400px; width:70px;">
-    <img src="MUNI.png" class="muni saltarmoneda"  style="bottom:120px; right:200px; width:100px;">
-    <img src="CJA DE INT.png" class="caja saltarmoneda"  class="saltar4" style="bottom:120px; right:100px; width:80px;">
+  <!-- JUEGO 1: MARIO -->
+  <div class="juego mario">
+    <img src="fondo2.jpg" class="fondo" alt="Fondo Mario" />
+
+    <div class="puntaje">
+      Puntaje: <span id="score-mario">0</span>
+    </div>
+
+    <img src="PERSONAJE.png" alt="Personaje Mario" class="moverpersonaje" style="width: 100px; left: 150px; top: 60%;" />
+    <img src="MONEDA.png" class="moneda" style="top: 150px; left: 130px; width: 60px;" />
+    <img src="CJA DE INT.png" class="seta saltarmoneda" style="bottom: 60px; left: 400px; width: 70px;" />
+    <img src="MUNI.png" class="muni saltarmoneda" style="bottom: 120px; right: 200px; width: 100px;" />
+    <img src="CJA DE INT.png" class="caja saltarmoneda" style="bottom: 120px; right: 100px; width: 80px;" />
   </div>
 
-<script src="index.js"></script>
-   
- 
+  <br />
 
+  <!-- JUEGO 2: FÚTBOL -->
+  <div class="futbol">
+    <div class="puntaje">
+      Puntaje: <span id="score-futbol">0</span>
+    </div>
 
-<br>
-<div class="futbol">
-<img src="fondocancha.jpg" alt="futbol"  class="fondo2">
-<img src="balon2.png" alt="" style="width: 60px; left: 250px;top: 20%;">
-<img src="cabe2.png" alt="cabezones" style="width: 100px; left: 150px;top: 60%;">
-<img src="cabe2.png" alt="cabezones" style="bottom:100px; right:150px; width:100px;">
-<img src="cabe2.png" alt="cabezones"style="bottom:300px; right:130px; width:100px;">
-<img src="cabe2.png" alt="cabezones" style="bottom:100px; right:320px; width:100px;">
-</div>
-   
+    <img src="fondocancha.jpg" alt="Cancha de fútbol" class="fondo2" />
+    <img src="balon2.png" alt="Balón" style="width: 60px; left: 250px; top: 20%;" />
+    <img src="cabe2.png" alt="Cabezón 1" class="saltarcabezones" style="width: 100px; left: 150px; top: 60%;" />
+    <img src="cabe2.png" alt="Cabezón 2" class="saltarcabezones" style="bottom: 100px; right: 150px; width: 100px;" />
+    <img src="cabe2.png" alt="Cabezón 3" class="saltarcabezones" style="bottom: 300px; right: 130px; width: 100px;" />
+    <img src="cabe2.png" alt="Cabezón 4" class="saltarcabezones" style="bottom: 100px; right: 320px; width: 100px;" />
+  </div>
+
+  <br />
+
+  <!-- JUEGO 3: PELEA -->
+  <div class="juego pelea">
+    <img src="fondo3.png" class="fondo" alt="Fondo de pelea" />
+
+    <div class="puntaje">
+      Puntaje: <span id="score-pelea">0</span>
+    </div>
+
+    <img src="perso.png" alt="Personaje jugador" class="moverpersonaje" style="width: 100px; left: 150px; top: 60%;" />
+    <img src="enemigo.png" alt="Enemigo" class="moverenemigo" style="width: 100px; left: 350px; top: 60%;" />
+
+    <!-- Poderes -->
+    <img src="poder.png" class="poder saltar" style="top: 150px; left: 130px; width: 60px;" />
+    <img src="poder.png" class="poder saltar" style="bottom: 120px; right: 200px; width: 100px; top: 60%;" />
+    <img src="poder.png" class="poder saltar" style="bottom: 150px; right: 100px; width: 100px;" />
+    <img src="poder.png" class="poder saltar" style="bottom: 100px; right: 120px; width: 60px;" />
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>

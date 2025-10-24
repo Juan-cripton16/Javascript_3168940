@@ -1,83 +1,130 @@
-.body{
+/* ==============================
+   ESTILOS GENERALES
+============================== */
+
+body {
   display: flex;
-  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   justify-content: center;
+  background: #1a1a1a;
+  margin: 0;
+  padding: 20px;
 }
- .juego {
-      position: relative;
-      width: 800px;
-      height: 450px;
-      overflow: hidden;
-      
-    }
 
-    .fondo {
-      width: 100%;
-      height: 100%;
-      border-radius: 5%;
-    }
+/* Contenedor general de juegos */
+.juego, .futbol {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 5%;
+  margin-bottom: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 
-    img {
-      position: absolute;
-      cursor: pointer;
-      
-    }
+/* Fondo de los juegos */
+.fondo, .fondo2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
 
-    
-    
+/* Estilo general para imágenes */
+img {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+}
 
-    .puntaje {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background: rgba(255,255,255,0.7);
-      padding: 8px 15px;
-      border-radius: 10px;
-      font-family: sans-serif;
-    }
+/* Marcador de puntaje */
+.puntaje {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000;
+}
 
-.saltarmoneda{ 
+/* ==============================
+   ANIMACIONES GENERALES
+============================== */
+
+/* Animación de salto */
+@keyframes salto {
+  0% { transform: translateY(0); opacity: 1; }
+  30% { transform: translateY(-60px); }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Animación de movimiento vertical */
+@keyframes movimiento-vertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-40px); }
+}
+
+/* ==============================
+   JUEGO 1: MARIO
+============================== */
+
+.moverpersonaje {
+  animation: movimiento-vertical 4s linear infinite alternate;
+}
+
+.saltarmoneda {
   animation: salto 0.5s ease forwards;
 }
-@keyframes salto {
-  0%{transform:translateY(0); opacity: 5;}
-  30%{transform:translateY(-60px);}
-  100%{transform:translateY(0); opacity: 0;}
+
+/* Monedas, cajas y setas */
+.moneda, .caja, .seta, .muni {
+  transition: transform 0.3s;
 }
 
-.moverpersonaje{
-  animation: moverpersonaje 4s linear infinite alternate;
+/* ==============================
+   JUEGO 2: FÚTBOL
+============================== */
 
+.futbol {
+  width: 750px;
+  height: 450px;
+  background: #004400;
 }
-@keyframes moverpersonaje {
-  0% {transform: translateY(0);}
-  100% {
-    transform: translateY(-40px);
-  }
+
+.fondo2 {
+  object-fit: cover;
 }
 
+.saltarcabezones {
+  animation: movimiento-vertical 3s ease-in-out infinite alternate;
+}
 
+/* ==============================
+   JUEGO 3: PELEA
+============================== */
 
+.pelea .fondo {
+  background: #111;
+}
 
-.futbol{
-      position: relative; 
-      width: 750px;
-      height: 450px;
-      overflow: hidden;
-      justify-content: center;
-     
-      
-    }
-    
-    .fondo2{
-      width: 100%;
-      height: 100%;
-      border-radius: 5%;
-      
-    }
-    
-    .cabezones{
-      position: absolute;
-    }
+.moverenemigo {
+  animation: movimiento-vertical 4s linear infinite alternate;
+}
 
-@keyframes mover
+.poder {
+  animation: salto 0.5s ease forwards;
+}
+
+/* ==============================
+   EFECTOS ADICIONALES
+============================== */
+
+.juego:hover, .futbol:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  transition: 0.4s;
+}
+
