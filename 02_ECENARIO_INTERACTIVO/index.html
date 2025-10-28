@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+<div class="escenas">
+  <button class="siguiente">  >  </button>
+  <button class="anterior">  <  </button>
+  
+  <div class="escena" name="ecenario1">
   <!-- JUEGO 1: MARIO -->
   <div class="juego mario">
     <img src="fondo2.jpg" class="fondo" alt="Fondo Mario" />
@@ -22,27 +26,24 @@
     <img src="MUNI.png" class="muni saltarmoneda" style="bottom: 120px; right: 200px; width: 100px;" />
     <img src="CJA DE INT.png" class="caja saltarmoneda" style="bottom: 120px; right: 100px; width: 80px;" />
   </div>
-
-  <br />
-
-  <!-- JUEGO 2: FÚTBOL -->
-  <div class="futbol">
+  </div>
+  
+  <div class="escena" name="ecenario2">
     <div class="puntaje">
       Puntaje: <span id="score-futbol">0</span>
     </div>
 
     <img src="fondocancha.jpg" alt="Cancha de fútbol" class="fondo2" />
-    <img src="balon2.png" alt="Balón" style="width: 60px; left: 250px; top: 20%;" />
+    <img src="balon2.png" alt="Balón"   class="balon"        style="width: 60px; left: 250px; top: 20%;" />
     <img src="cabe2.png" alt="Cabezón 1" class="saltarcabezones" style="width: 100px; left: 150px; top: 60%;" />
     <img src="cabe2.png" alt="Cabezón 2" class="saltarcabezones" style="bottom: 100px; right: 150px; width: 100px;" />
     <img src="cabe2.png" alt="Cabezón 3" class="saltarcabezones" style="bottom: 300px; right: 130px; width: 100px;" />
     <img src="cabe2.png" alt="Cabezón 4" class="saltarcabezones" style="bottom: 100px; right: 320px; width: 100px;" />
   </div>
-
-  <br />
-
+  
+   <div class="escena" name="ecenario3">
   <!-- JUEGO 3: PELEA -->
-  <div class="juego pelea">
+   <div class="juego pelea">
     <img src="fondo3.png" class="fondo" alt="Fondo de pelea" />
 
     <div class="puntaje">
@@ -50,7 +51,7 @@
     </div>
 
     <img src="perso.png" alt="Personaje jugador" class="moverpersonaje" style="width: 100px; left: 150px; top: 60%;" />
-    <img src="enemigo.png" alt="Enemigo" class="moverenemigo" style="width: 100px; left: 350px; top: 60%;" />
+    <img src="enemigo.png" alt="Enemigo" class="mover enemigo" style="width: 100px; left: 350px; top: 60%;" />
 
     <!-- Poderes -->
     <img src="poder.png" class="poder saltar" style="top: 150px; left: 130px; width: 60px;" />
@@ -58,7 +59,18 @@
     <img src="poder.png" class="poder saltar" style="bottom: 150px; right: 100px; width: 100px;" />
     <img src="poder.png" class="poder saltar" style="bottom: 100px; right: 120px; width: 60px;" />
   </div>
+ 
+</div>
+   
+<div class="miniaturas">
 
-  <script src="index.js"></script>
+    <div img src="fondo2.jpg" name="miniatura1"  with="100px"></div>
+    <div img src="fondocancha.jpg" name="miniatura2" with="100px"></div>
+    <div img src="fondo3.png" name="miniatura2" with="100pxç"></div>
+  </div>
+  
+</div>
+  <script src="app.js"></script>
 </body>
 </html>
+ 

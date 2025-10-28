@@ -128,3 +128,64 @@ img {
   transition: 0.4s;
 }
 
+.miniaturas {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.miniatura {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.miniaturas:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.escenas {
+  position: relative;
+  width: 800px;
+  height: 450px; 
+  overflow: hidden;   
+}
+
+.siguiente {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.anterior {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+/* .escena {
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+ */
+
+ 
+
