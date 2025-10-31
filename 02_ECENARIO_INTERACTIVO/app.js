@@ -85,6 +85,8 @@ items.forEach((item) => {
 const escenas = document.querySelectorAll(".escena");
 const btnSiguiente = document.querySelector(".siguiente");
 const btnAnterior = document.querySelector(".anterior");
+const miniaturas = document.querySelectorAll(".miniatura");
+
 let escenaActual = 0;
 
 function mostrarEscena(index) {
@@ -108,5 +110,19 @@ btnAnterior.addEventListener("click", () => {
 });
 
 // Mostrar la primera escena al cargar la página
-mostrarEscena(escenaActual);  
+mostrarEscena(escenaActual);
 
+index = 0;
+
+miniaturas.forEach((miniatura, index) => {
+  miniatura.addEventListener("click", () => {
+    escenaActual = index;
+    mostrarEscena(escenaActual);
+  });
+});
+
+
+
+
+
+  
