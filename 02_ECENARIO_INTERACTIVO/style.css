@@ -206,7 +206,13 @@ img {
   height: 100%;
   top: 0;
 }
- */
+*/
 
- 
+.escena {
+  display: none;
+}
+.escena.active {
+  display: block;
+}
+
 
