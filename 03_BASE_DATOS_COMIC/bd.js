@@ -1,5 +1,5 @@
 let comic = {
-  "nombrecomic": "trama vortex",
+  "nombrecomic": "un legado que resuena en el presente",
   "numeroCapitulos": 3,
   "genero": "ciencia ficcion",
   "sinopsis": "",
