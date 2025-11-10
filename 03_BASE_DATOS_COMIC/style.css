@@ -1,0 +1,26 @@
+.body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}         
+
+.portada img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    top: 50px  ;
+}
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.capitulo {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}   
