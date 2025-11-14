@@ -2,7 +2,7 @@ let comic = {
   "nombrecomic": "un legado que resuena en el presente",
   "numeroCapitulos": 3,
   "genero": "ciencia ficcion",
-  "sinopsis": "",
+  "sinopsis": "histia del legado de rodolfo aicardi",
   "autores": "hinca",
   "portadaComic": "img/portada.jpg",
   "years": "2025",
