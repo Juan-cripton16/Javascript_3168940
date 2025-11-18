@@ -6,6 +6,29 @@ let comic = {
   "autores": "hinca",
   "portadaComic": "img/portada.jpg",
   "years": "2025",
+  "personajes": [
+    {
+      "nombre": "rodolfo",
+      "edad": 30,
+      "descripcion": "cantante colombiano de musica tropical",  
+      "imagen": "img./rodolfo.jpg" 
+    }
+    ,
+    {
+      "nombre": "abuela",
+      "edad": 75,
+      "descripcion": "abuela de rodolfo que lo apoyo en su carrera musical",  
+      "imagen": "img./abuela.jpg" 
+    }
+    ,
+    {
+      "nombre": "mateo",
+      "edad": 10,
+      "descripcion": "nieto de rodolfo que sigue sus pasos musicales",  
+      "imagen": "img./mateo.jpg" 
+    }
+  
+  ],     
   "capitulos": [
     { 
       "id": 1,
