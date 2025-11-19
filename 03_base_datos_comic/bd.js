@@ -3,29 +3,26 @@ let comic = {
   "numeroCapitulos": 3,
   "genero": "ciencia ficcion",
   "sinopsis": "histia del legado de rodolfo aicardi",
-  "autores": "hinca",
+  "autores": "juan polo",
   "portadaComic": "img/portada.jpg",
   "years": "2025",
   "personajes": [
     {
       "nombre": "rodolfo",
-      "edad": 30,
       "descripcion": "cantante colombiano de musica tropical",  
-      "imagen": "img./rodolfo.jpg" 
+      "imagen": "img/rodolfo.jpg" 
     }
     ,
     {
       "nombre": "abuela",
-      "edad": 75,
       "descripcion": "abuela de rodolfo que lo apoyo en su carrera musical",  
-      "imagen": "img./abuela.jpg" 
+      "imagen": "img/abuela.jpg" 
     }
     ,
     {
       "nombre": "mateo",
-      "edad": 10,
       "descripcion": "nieto de rodolfo que sigue sus pasos musicales",  
-      "imagen": "img./mateo.jpg" 
+      "imagen": "img/mateo.jpg" 
     }
   
   ],     

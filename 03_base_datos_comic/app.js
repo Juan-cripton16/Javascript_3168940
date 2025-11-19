@@ -1,13 +1,19 @@
-const comicpincipal = document.querySelector('.comic-principal');
 
-
-console.log(comic-pincipal);
-
+const personajes = document.querySelector('.container-personajes');
 
 
 
-comicprincipal.innerHTML = `   
-      <h1 class="titulo">${comic.nombrecomic}</h1>
-      <p>${sinopsis}</p>
-      <p class="autor">Autor: juan jose </p>
-      <p class="año">Año: 2025</p> `
+comic.personajes.forEach(char=> {
+       const div = document.createElement('div');
+       div.classList.add('personaje');
+       div.innerHTML = `
+              <div class="imagen">
+          <img src="${char.imagen}" alt="">
+        </div>
+        <h3 class="${char.nombre}"></h3>
+        <p class="${char.descripcion}">
+          
+        </p>
+       `;
+       personajes.appendChild(div);
+});          

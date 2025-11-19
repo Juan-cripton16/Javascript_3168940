@@ -36,6 +36,12 @@ personajes.innerHTML = `
 
 
 comic.personajes.forEach(char=> {
-       console.log(char.nombre);
-       document.ody.innerHTML += `<img src="${char.imagen}" with="200">`
+       const div = document.createElement('div');
+       div.classList.add('personajes');
+       div.innerHTML = `
+              <img src="${char.imagen}" alt="">
+              <p>${char.nombre}</p>
+              <p>${char.descripcion}</p>
+       `;
+       cardpersonajes.appendChild(div);
 });    
