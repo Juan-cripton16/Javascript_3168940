@@ -1,6 +1,6 @@
 
 const personajes = document.querySelector('.container-personaje');
-const capitulos = document.querySelector('.container-capitulo');
+const capitulos = document.querySelector('.container-capitulos');
 
 
 comic.personajes.forEach(char => {
@@ -20,15 +20,17 @@ comic.personajes.forEach(char => {
 
 comic.capitulos.forEach(cap => {
        const div = document.createElement('div');
-       div.classList.add('capitulo');
+       div.classList.add('capitulos');
        div.innerHTML = `
+        <div class="capitulo">
         <div class="imagen">
           <img src="${cap.portada}" alt="">
         </div>
-        <div class="info-capitulo">
-          <h3>${cap.nombre}</h3>
-          <p>${cap.descripcion}</p>
-          <button class="vercapitulo">ver capitulo</button>
+        <div class="detalles-capitulo">
+        <h3>${cap.nombre}</h3>
+        <p>${cap.descripcion}</p>
+        <p class="personajes"><strong>Personajes:</strong> ${cap.personaje}</p>
+        <button class="vercapitulo">ver capitulo</button>
         </div>
        `;
        capitulos.appendChild(div);

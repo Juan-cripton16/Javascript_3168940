@@ -30,7 +30,7 @@ let comic = {
     { 
       "id": 1,
       "nombre": "El Nacimiento de un Eco Musical",
-      "personajes": ["rodolfo", "abuela"],
+      "personaje": ["rodolfo", "abuela"],
       "portada": "./img/portada1.png",
       "descripcion": "El capítulo cuenta cómo Rodolfo Aicardi comenzó su vida musical en Galeras, Sucre, luego se mudó a Medellín a los 15 años, y con el tiempo llegó a ser una figura destacada de la música bailable colombiana, especialmente gracias a su trabajo con Los Hispanos y su orquesta La Típica RA7..",
     },
