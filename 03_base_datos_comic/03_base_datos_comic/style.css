@@ -209,3 +209,15 @@ body {
 
 
 
+.container-personajes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;  
+  text-align: center;
+}
+
+
+responsive {
+  max-width: 100%;
+  height: auto;
+}         
