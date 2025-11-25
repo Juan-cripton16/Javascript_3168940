@@ -9,10 +9,11 @@ comic.personajes.forEach(char => {
        div.classList.add('descripcion-personaje');
        div.innerHTML = `
            <div class="imagen">
-          <img src="${char.imagen}" alt="Rodolfo Aicardi">
+        <img src="${char.imagen}" alt="Rodolfo Aicardi">
         </div>
         <h3>${char.nombre}</h3>
         <p>${char.descripcion}</p>
+        <a href="personajes.html"><button class="vercapitulo">ver personajes</button></a
        `;
        personajes.appendChild(div);
 });          
@@ -30,7 +31,7 @@ comic.capitulos.forEach(cap => {
         <h3>${cap.nombre}</h3>
         <p>${cap.descripcion}</p>
         <p class="personajes"><strong>Personajes:</strong> ${cap.personaje}</p>
-        <button class="vercapitulo">ver capitulo</button>
+        <a href="capitulos.html"><button class="vercapitulo">ver capitulo</button></a
         </div>
        `;
        capitulos.appendChild(div);
