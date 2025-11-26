@@ -1,4 +1,4 @@
-let comic = {
+export let comic = {
   "nombrecomic": "un legado que resuena en el presente",
   "numeroCapitulos": 3,
   "genero": "ciencia ficcion",
@@ -7,19 +7,22 @@ let comic = {
   "portadaComic": "img/portada.png",
   "years": "2025",
   "personajes": [
-    {
+    { 
+      "id": 1,
       "nombre": "rodolfo",
       "descripcion": "cantante colombiano de musica tropical",  
       "imagen": "./img/rodolfo.png" 
     }
     ,
     {
+      "id": 2,
       "nombre": "abuela",
       "descripcion": "abuela de rodolfo que lo apoyo en su carrera musical",  
       "imagen": "./img/abuela.png" 
     }
     ,
     {
+      "id": 3,
       "nombre": "mateo",
       "descripcion": "nieto de rodolfo que sigue sus pasos musicales",  
       "imagen": "./img/mateo.png" 
