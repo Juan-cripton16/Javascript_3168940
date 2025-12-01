@@ -24,7 +24,7 @@ comic.capitulos.forEach(cap => {
        const div = document.createElement('div');
        div.classList.add('capitulos');
        div.innerHTML = `
-        <a href="./capitulos.html?id=${cap.id}">
+        
         <div class="capitulo">
         <div class="imagen">
           <img src="${cap.portada}" alt="">
@@ -33,9 +33,9 @@ comic.capitulos.forEach(cap => {
         <h3>${cap.nombre}</h3>
         <p>${cap.descripcion}</p>
         <p class="personajes"><strong>Personajes:</strong> ${cap.personaje}</p>
-        <a href="capitulos.html"><button class="vercapitulo">ver capitulo</button></a
+        <a href="./capitulos.html?id=${cap.id}"><button class="vercapitulo">ver capitulo</button></a
         </div>
-        </a>
+        
        `;
        capitulos.appendChild(div);
 }      );

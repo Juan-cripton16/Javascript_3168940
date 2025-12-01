@@ -35,13 +35,20 @@ export let comic = {
       "nombre": "El Nacimiento de un Eco Musical",
       "personaje": ["rodolfo", "abuela"],
       "portada": "./img/portada1.png",
+      "genero": "ciencia ficcion",
+      "years": "2025",
+      "autores": "juan polo",
       "descripcion": "El capítulo cuenta cómo Rodolfo Aicardi comenzó su vida musical en Galeras, Sucre, luego se mudó a Medellín a los 15 años, y con el tiempo llegó a ser una figura destacada de la música bailable colombiana, especialmente gracias a su trabajo con Los Hispanos y su orquesta La Típica RA7..",
     },
+
     {
       "id": 2,
       "nombre": "El Alma detrás de la Voz Inmortal",
       "personaje": ["rodolfo", ""],
       "portada": "./img/portada2.png",
+      "genero": "ciencia ficcion",
+      "years": "2025",
+      "autores": "juan polo",
       "descripcion":  "Este capítulo profundiza en la vida personal de Rodolfo, explorando sus luchas y triunfos, y cómo su pasión por la música lo llevó a superar obstáculos para convertirse en un ícono cultural en Colombia y América Latina.",
         
       
@@ -51,6 +58,9 @@ export let comic = {
       "nombre": "Un Legado que Resuena en el Presente",
       "personaje": ["rodolfo", "mateo"],
       "portada": "./img/portada3.png",
+      "years": "2025",
+      "genero": "ciencia ficcion",
+      "autores": "juan polo",
       "descripcion":  "Mateo, el nieto de Rodolfo, sigue los pasos de su abuelo, manteniendo vivo su legado musical y adaptándolo a los nuevos tiempos.",
       
     },
