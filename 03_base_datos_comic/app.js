@@ -9,12 +9,12 @@ comic.personajes.forEach(char => {
        div.classList.add('personaje');
        div.classList.add('descripcion-personaje');
        div.innerHTML = `
-           <div class="imagen">
+        <div class="imagen">
         <img src="${char.imagen}" alt="Rodolfo Aicardi">
         </div>
         <h3>${char.nombre}</h3>
         <p>${char.descripcion}</p>
-        <a href="personajes.html"><button class="vercapitulo">ver personajes</button></a
+        <a href="./personajes.html?id=${char.id}"<button class="vercapitulo">ver personajes</button></a
        `;
        personajes.appendChild(div);
 });          

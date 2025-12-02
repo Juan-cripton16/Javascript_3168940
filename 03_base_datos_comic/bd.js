@@ -12,6 +12,7 @@ export let comic = {
       "nombre": "rodolfo",
       "descripcion": "cantante colombiano de musica tropical",  
       "imagen": "./img/rodolfo.png" 
+      
     }
     ,
     {
@@ -19,6 +20,7 @@ export let comic = {
       "nombre": "abuela",
       "descripcion": "abuela de rodolfo que lo apoyo en su carrera musical",  
       "imagen": "./img/abuela.png" 
+     
     }
     ,
     {
@@ -26,6 +28,7 @@ export let comic = {
       "nombre": "mateo",
       "descripcion": "nieto de rodolfo que sigue sus pasos musicales",  
       "imagen": "./img/mateo.png" 
+      
     }
   
   ],     
