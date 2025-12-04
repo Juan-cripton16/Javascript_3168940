@@ -10,22 +10,22 @@
 
 <body>
 
-  <header class="header">
+  <header class="header fade-down">
     <div class="brand">Comic</div>
     <nav class="nav" aria-label="Menú principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#genero">Genero</a>
-      <a href="#autor">Autor</a>
-      <a href="#año">Año</a>
+      <a href="#inicio" class="fade-up">Inicio</a>
+      <a href="#genero" class="fade-up">Genero</a>
+      <a href="#autor" class="fade-up">Autor</a>
+      <a href="#año" class="fade-up">Año</a>
     </nav>
   </header>
 
 
-  <section class="comic-principal">
-    <div class="portada">
+  <section class="comic-principal fade-up">
+    <div class="portada fade-left">
       <img src="portada.png" alt="Portada del cómic principal">
     </div>
-    <div class="info">
+    <div class="info fade-right">
       <h1 class="titulo">Un Legado que Resuena en el Presente</h1>
       <p class="genero">Género: Ciencia Ficción</p>
       <p class="autor">Autor: juan jose </p>
@@ -35,113 +35,52 @@
 
 
   <section class="lista-caps">
-    <h2 class="subtitulo">Capítulos</h2>
+    <h2 class="subtitulo fade-up">Capítulos</h2>
 
-
-    
     <div class="container-capitulos">
 
-    <!-- <div class="capitulo">
-      <div class="imagen">
-        <img src="rodolfo 1.png" alt="Capítulo 1">
+      <!-- Ejemplo: Aplica fade-up + animación flotante -->
+      <!--
+      <div class="capitulo fade-up card">
+        <div class="imagen">
+          <img src="rodolfo1.png" alt="Capítulo 1">
+        </div>
+        <div class="detalle">
+          <h3 class="nombre">El Nacimiento de un Eco Musical</h3>
+          <p class="descripcion">
+            El capítulo describe los inicios musicales de Rodolfo Aicardi...
+          </p>
+          <p class="personajes"><strong>Personajes:</strong> Rodolfo, Abuela</p>
+          <button class="vercapitulo">ver capitulo</button>
+        </div>
       </div>
-      <div class="detalle">
-        <h3 class="nombre">El Nacimiento de un Eco Musical</h3>
-        <p class="descripcion">
-          El capítulo describe los inicios musicales de Rodolfo Aicardi (Marco Tulio Aicardi Rivera)
-          en su natal Galeras, Sucre, su traslado a Medellín a los 15 años, y su ascenso hasta convertirse
-          en un ícono de la música bailable colombiana con grupos como Los Hispanos y su orquesta La Típica RA7.
-        </p>
-        <p class="personajes"><strong>Personajes:</strong> Rodolfo, Abuela</p>
+      -->
 
-        <button class="vercapitulo">ver capitulo</button>
-      </div>
-     </div>   -->
-
-     <!-- <div class="capitulo">
-      <div class="imagen">
-        <img src="rodlfo2.png" alt="Capítulo 2">
-      </div>
-      <div class="detalle">
-        <h3 class="nombre">El Alma detrás de la Voz Inmortal</h3>
-        <p class="descripcion">Explora la esencia y la fuerza interior que definieron su carrera.</p>
-        <p class="personajes"><strong>Personajes:</strong> Rodolfo</p>
-        a<button class="vercapitulo">vercapitulo</button>
-      </div>
-     </div> -->
-
-     <!-- <div class="capitulo">
-      <div class="imagen">
-        <img src="rodlfo3.png" alt="Capítulo 3">
-      </div>
-      <div class="detalle">
-        <h3 class="nombre">Un Legado que Resuena en el Presente</h3>
-        <p class="descripcion">
-          El cierre de la historia muestra cómo su legado sigue vivo en las nuevas generaciones.
-        </p>
-        <p class="personajes"><strong>Personajes:</strong> Rodolfo, Mateo</p>
-        <button class="vercapitulo">ver capitulo</button>
-      </div>
-     </div> -->
     </div>
   </section>
 
   <section class="personajes">
-
-    <h2 class="subtitulo">Personajes Principales</h2>
-
+    <h2 class="subtitulo fade-up">Personajes Principales</h2>
 
     <div class="container-personaje">
- 
-      <!-- <div class="personaje">
+
+      <!-- Ejemplo con animación -->
+      <!--
+      <div class="personaje fade-up card">
         <div class="imagen">
-          <img src="rodolfo 1.png" alt="Rodolfo Aicardi">
+          <img src="rodolfo1.png" alt="Rodolfo Aicardi">
         </div>
         <h3 class="nombre-personaje">Rodolfo Aicardi</h3>
-        <p class="descripcion-personaje">
-          Protagonista de la historia, un talentoso cantante colombiano cuya vida y carrera musical
-          inspiran a generaciones.
-        </p>
-        <button class="vercapitulo">ver personaje</button>
-      </div> 
-
-
-      <div class="personaje">
-        <div class="imagenabuela">
-          <img src="abuela.png" alt="Abuela">
-        </div>
-        <h3 class="nombre-personaje">Abuela</h3>
-        <p class="descripcion-personaje">
-          Figura materna que apoya y guía a Rodolfo en sus primeros años, inculcándole valores y amor por la música.
-        </p>
+        <p class="descripcion-personaje">Protagonista de la historia...</p>
         <button class="vercapitulo">ver personaje</button>
       </div>
- 
-
-       <div class="personaje">
-        <div class="imagen">
-          <img src="mateo.png" alt="Mateo">
-        </div>
-        <h3 class="nombre-personaje">Mateo</h3>
-        <p class="descripcion-personaje">
-          Joven admirador de Rodolfo que representa la nueva generación influenciada por su música y legado.
-        </p> 
-        <button class="vercapitulo">ver personaje</button>
-
-
- 
-      </div> -->
+      -->
 
     </div>
-
   </section>
 
+  <script type="module" src="./app.js"></script>
 
-
-
-
-  <script  type="module" src="./app.js"></script>
-  
 </body>
 
 </html>
