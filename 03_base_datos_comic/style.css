@@ -19,6 +19,7 @@ body {
   background-color: #181818;
   border-bottom: 2px solid #2a2a2a;
   padding: 40px;
+  background-image: sr
   
 }
 
@@ -259,32 +260,9 @@ body {
 
 
 
-
-.carousel {
-  width: 100%;
-  height: 260px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
+.comic-principal {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fes%2Ffotos%2Ffondos-para-paginas-web&psig=AOvVaw2k2-h0nZ0ynIm5L3Tu0Tq7&ust=1765405118710000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIikwdrEsZEDFQAAAAAdAAAAABAE');
 }
 
-.carousel-track {
-  display: flex;
-  width: 300%;
-  animation: slide 12s infinite linear;
-}
-
-.carousel img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
 
 

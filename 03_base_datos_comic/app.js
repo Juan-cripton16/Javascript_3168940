@@ -2,6 +2,7 @@ import { comic } from './bd.js';
 
 const personajes = document.querySelector('.container-personaje');
 const capitulos = document.querySelector('.container-capitulos');
+const hero = document.querySelector('.hero');
 
 
 comic.personajes.forEach(char => {
@@ -39,3 +40,6 @@ comic.capitulos.forEach(cap => {
        `;
        capitulos.appendChild(div);
 }      );
+
+
+
