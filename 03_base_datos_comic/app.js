@@ -2,7 +2,12 @@ import { comic } from './bd.js';
 
 const personajes = document.querySelector('.container-personaje');
 const capitulos = document.querySelector('.container-capitulos');
-const hero = document.querySelector('.hero');
+const info= document.querySelector('info fade-right');
+
+
+
+
+
 
 
 comic.personajes.forEach(char => {
@@ -43,3 +48,38 @@ comic.capitulos.forEach(cap => {
 
 
 
+const portadas = document.querySelectorAll('.carrusel-portadas img');
+let index = 0;
+
+setInterval(() => {
+  portadas[index].classList.remove('activa');
+  index = (index + 1) % portadas.length;
+  portadas[index].classList.add('activa');
+}, 4000);
+
+
+
+const inicio = document.querySelector('#comic-principal');
+
+
+comic.inicio.forEach ( ini => {
+const div = document.createElement("div");
+div.classList.add("inicio-comic");
+div.innerHTML =  `
+div class="portada fade-left">
+    <div class="carrusel-portadas">
+      <img src="portada.png" class="activa">
+      <img src="mate.png">
+      <img src="abu.png">
+    </div>
+  </div>
+
+  <div class="info fade-right">
+    <h1 class="titulo">${ini.nombrecomic}</h1>
+    <p class="genero">${ini.genero}</p>
+    <p class="autor">${ini.autores}</p>
+    <p class="año">${ini.sinopsis}</p>
+  </div>
+             `
+             inicio.appendChild(div);
+});

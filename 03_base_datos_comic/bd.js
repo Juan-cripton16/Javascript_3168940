@@ -1,11 +1,21 @@
 export let comic = {
-  "nombrecomic": "un legado que resuena en el presente",
-  "numeroCapitulos": 3,
-  "genero": "ciencia ficcion",
-  "sinopsis": "histia del legado de rodolfo aicardi",
-  "autores": "juan polo",
-  "portadaComic": "img/portada.png",
-  "years": "2025",
+
+
+ "inicio":
+  [
+    {
+     "nombrecomic": "un legado que resuena en el presente",
+     "numeroCapitulos": 3,
+     "genero": "ciencia ficcion",
+     "sinopsis": "histia del legado de rodolfo aicardi",
+     "autores": "juan polo",
+     "portadaComic": "img/portada.png",
+     "years": "2025",
+    }
+  ],
+
+
+
   "personajes": [
     { 
       "id": 1,
@@ -69,4 +79,5 @@ export let comic = {
     },
   ]
 }
+
 
