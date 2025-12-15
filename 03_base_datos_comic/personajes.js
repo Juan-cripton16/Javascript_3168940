@@ -2,8 +2,16 @@
 
 import { comic } from "./bd.js";
 
+
+
 const params = new URLSearchParams(window.location.search);
 const id= parseInt(params.get('id'));
+
+
+if (!id) {
+  window.location.href = 'index.html';
+}
+
 
 const mipersonaje = comic.personajes.find(p => p.id === id);
 console.log("el personaje escontrado es :", mipersonaje);
@@ -15,6 +23,7 @@ console.log (mipersonaje.nombre);
 
 
 personajes.innerHTML= `
+      <a href="index.html" class="btn-inicio">⬅ Volver al inicio</a>
       <div class="ficha-personaje">
       <div class="ficha-contenido">
 
@@ -44,3 +53,5 @@ personajes.innerHTML= `
       <img src="${mipersonaje.imagen}" alt="${mipersonaje.nombre}">
     </div>
   `;  
+
+

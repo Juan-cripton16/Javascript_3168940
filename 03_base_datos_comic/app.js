@@ -83,3 +83,13 @@ div class="portada fade-left">
              `
              inicio.appendChild(div);
 });
+
+
+const imagenes = document.querySelectorAll('.carrusel-portadas img');
+let indiceActual = 0;
+
+setInterval(() => {
+    imagenes[indiceActual].classList.remove('activa');
+    indiceActual = (indiceActual + 1) % imagenes.length;
+    imagenes[indiceActual].classList.add('activa');
+}, 3500); // cambia cada 3.5 segundos
